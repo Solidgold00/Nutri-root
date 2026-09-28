@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "NutriRoot",
+    "slug": "nutriroot",
+    "version": "0.4.0",
+    "orientation": "portrait",
+    "scheme": "nutriroot",
+    "userInterfaceStyle": "automatic",
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F5F7F2"
+      }
+    }
+  }
+}

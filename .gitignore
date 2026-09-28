@@ -1,0 +1,16 @@
+node_modules/
+.expo/
+.env
+**/.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+.testdeps/
+.pip-tmp/
+.npm-cache/
+.build-test*/
+dist/
+backend/data/reference/*.xlsx
+backend/data/source_profiles.json
