@@ -2,23 +2,23 @@
   "expo": {
     "name": "NutriRoot",
     "slug": "nutriroot",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "orientation": "portrait",
     "scheme": "nutriroot",
-    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "jsEngine": "jsc",
     "plugins": [
-      "expo-router"
+      "./plugins/withAndroidBuildSettings"
     ],
-    "experiments": {
-      "typedRoutes": true
-    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#F5F7F2"
-      }
+      },
+      "package": "com.nutriroot.app",
+      "versionCode": 6
     }
   }
 }

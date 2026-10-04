@@ -6,14 +6,15 @@ import {
   Pressable,
   SafeAreaView,
   ScrollView,
+  StatusBar,
   StyleSheet,
   Text,
   TextInput,
   View,
 } from 'react-native';
-import { Metric } from '@/src/components/Metric';
-import { analyzeMeal } from '@/src/lib/api';
-import { AnalysisResult } from '@/src/lib/types';
+import { Metric } from './src/components/Metric';
+import { analyzeMeal } from './src/lib/api';
+import { AnalysisResult } from './src/lib/types';
 
 const examples = [
   'I had 2 scoops of egusi, one wrap of pounded yam and two small pieces of beef',
@@ -27,7 +28,7 @@ function compactCountries(countries: string[]) {
   return `${countries.slice(0, 4).join(' · ')} · +${countries.length - 4}`;
 }
 
-export default function HomeScreen() {
+export default function App() {
   const [meal, setMeal] = useState('');
   const [result, setResult] = useState<AnalysisResult | null>(null);
   const [loading, setLoading] = useState(false);
@@ -50,6 +51,7 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView style={styles.safe}>
+      <StatusBar barStyle="dark-content" backgroundColor="#F5F7F2" />
       <KeyboardAvoidingView
         style={styles.flex}
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
