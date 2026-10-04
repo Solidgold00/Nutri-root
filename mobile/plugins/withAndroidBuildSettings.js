@@ -2,8 +2,8 @@ const { withGradleProperties } = require('@expo/config-plugins');
 
 const ANDROID_BUILD_SETTINGS = {
   reactNativeArchitectures: 'arm64-v8a',
-  newArchEnabled: 'false',
-  hermesEnabled: 'false',
+  newArchEnabled: 'true',
+  hermesEnabled: 'true',
 };
 
 module.exports = function withAndroidBuildSettings(config) {
@@ -23,3 +23,4 @@ module.exports = function withAndroidBuildSettings(config) {
     return updatedConfig;
   });
 };
+

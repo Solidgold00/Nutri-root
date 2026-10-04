@@ -2,11 +2,11 @@
   "expo": {
     "name": "NutriRoot",
     "slug": "nutriroot",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "orientation": "portrait",
     "scheme": "nutriroot",
-    "newArchEnabled": false,
-    "jsEngine": "jsc",
+    "newArchEnabled": true,
+    "jsEngine": "hermes",
     "plugins": [
       "./plugins/withAndroidBuildSettings"
     ],
@@ -18,7 +18,8 @@
         "backgroundColor": "#F5F7F2"
       },
       "package": "com.nutriroot.app",
-      "versionCode": 6
+      "versionCode": 7
     }
   }
 }
+
